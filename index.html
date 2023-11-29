@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cristian Barrios</title>
+    <link rel="shortcut icon" href="assets/images/maletin.png" type="image/x-icon">
     <!-- Bootstrap Styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -14,7 +18,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Portfolio</a>
+              <a class="navbar-brand" href="#">Mi portafolio</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -24,16 +28,16 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre mi</a>
+                    <a class="nav-link" href="#about-me">Sobre mi</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Proyectos</a>
+                    <a class="nav-link" href="#skills">Habilidades</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Servicios</a>
+                    <a class="nav-link" href="#projecs">Proyectos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#contact">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -42,25 +46,76 @@
     </header>
 
     <!-- Sección con fondo de imagen -->
-    <section class="seccion-con-fondo" style="height: 100vh;">
-        <div class="container">
-            <div class="row d-flex justify-content-center align-items-center">
+    <section class="seccion-con-fondo d-flex justify-content-center align-items-center min-vh-100">
+        <div class="container p-4">
+            <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1 class="fw-1">¡Hola!</h1>
-                    <p class="fs-3">Soy un desarrollador web</p>
-                    <a href="#" class="btn btn-danger fs-5 rounded-0">Contactame</a>
+                    <h1 class="fs-1 fw-bold text-white">¡Hola!</h1>
+                    <p class="fs-3 fw-bolder text-white">Soy un <span class="text-primary">desarrollador web</span></p>
+                    <a href="#projects" class="btn btn-danger fs-5 rounded-0">Mis proyectos</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Seccion sobre mi -->
-    <section class="about-me">
-      <h2 class="text-center">Sobre mi</h2>
+    <section id="about-me">
+      <div class="container p-4">
+        <div class="row">
+            <!-- Contenedor de la foto -->
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="foto-container">
+                    <img src="assets/images/mi-foto.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <!-- Contenedor de la descripción -->
+            <div class="col-md-6">
+                <div class="descripcion-container text-center">
+                    <h2>Hola!, yo soy...</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ducimus, velit et unde ad blanditiis est vel officiis distinctio obcaecati alias debitis omnis cum, quidem nam eius assumenda. Id, inventore!.</p>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 d-flex align-items-center">
+                    <a href="#" class="btn btn-danger rounded-0 me-5">Descargar CV</a>
+                    <div class="socials-links">
+                      <a href="#"><i class="bi bi-github text-dark fs-3 me-1"></i></a>
+                      <a href="#"><i class="bi bi-linkedin text-dark fs-3 me-1"></i></a>
+                      <a href="#"><i class="bi bi-whatsapp text-dark fs-3 me-1"></i></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
     </section>
 
+    <!-- Seccion habilidades -->
+    <section id="skills" class="text-center">
+      <h2>Habilidades</h2>
+      <div class="container container-skills d-flex justify-content-center align-items-center">
+        <div class="row">
+          <div class="col-4 col-lg-3 col-md-4 col-sm-4 container-img d-flex justify-content-center align-items-center p-3">
+            <img src="assets/images/html.png" alt="HTML">
+          </div>
+          <div class="col-4 col-lg-3 col-md-3 col-sm-4 container-img d-flex justify-content-center align-items-center p-3">
+            <img src="assets/images/css.png" alt="CSS">
+          </div>
+          <div class="col-4 col-lg-3 col-md-3 col-sm-4 container-img d-flex justify-content-center align-items-center p-3">
+            <img src="assets/images/javascript.png" alt="JavaScript">
+          </div>
+          <div class="col-4 col-lg-3 col-md-3 col-sm-4 container-img d-flex justify-content-center align-items-center p-3">
+            <img src="assets/images/bootstrap.png" alt="Bootstrap">
+          </div>
+          <div class="col-4 col-lg-3 col-md-3 col-sm-4 container-img d-flex justify-content-center align-items-center p-3">
+            <img src="assets/images/php.png" alt="PHP">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
     <!-- Seccion de proyectos -->
-    <section class="projects container">
+    <section id="projects" class="container">
         <h2 class="text-center">Proyectos</h2>
         <div class="row">
 
@@ -80,20 +135,40 @@
 
     </section>
 
-    <!-- Seccion de servicios -->
-    <section class="services">
-      <h2 class="text-center">Servicios</h2>
-    </section>
-
     <!-- Seccion de contacto -->
-    <section class="contact">
+    <section id="contact" class="d-flex justify-content-center align-items-center flex-column p-4 bg-primary-subtle">
       <h2 class="text-center">Contactame</h2>
+      <form style="width: 25rem;">
+        <div class="mb-3 row">
+          <div class="col">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control rounded-0" id="nombre" name="nombre" placeholder="">
+          </div>
+          <div class="col">
+            <label for="asunto" class="form-label">Asunto</label>
+            <input type="text" class="form-control rounded-0" id="asunto" name="asunto" placeholder="">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control rounded-0" id="email" name="email" placeholder="">
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control rounded-0" placeholder=""></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary rounded-0 d-block w-100">Enviar mensaje</button>
+      </form>
     </section>
+    
 
     <!-- Pie de pagina -->
-    <footer>
+    <footer class="bg-dark text-white p-4">
+      <div class="footer-content d-flex justify-content-center align-items-center">
+          <p class="text-center">Derechos reservados por @CristianBarrios</p>
+      </div>
+  </footer>
 
-    </footer>
 
 
 
