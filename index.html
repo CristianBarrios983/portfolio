@@ -37,7 +37,7 @@
                     <a class="nav-link" href="#services">Servicios</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#projecs">Proyectos</a>
+                    <a class="nav-link" href="#projects">Proyectos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#contact">Contacto</a>
@@ -68,10 +68,10 @@
 
     <!-- Seccion sobre mi -->
     <section id="about-me">
-      <div class="container p-4">
+      <div class="container p-4 my-5">
         <div class="row">
           <!-- Contenedor de la foto -->
-          <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <div class="col-md-6 d-flex justify-content-center align-items-center mb-5">
             <div class="foto-container">
               <img src="assets/images/astronauta.jpg" alt="" class="img-fluid">
             </div>
@@ -79,19 +79,14 @@
           <!-- Contenedor de la descripción -->
           <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">
             <div class="descripcion-container text-center text-md-start">
-              <h2>Un poco sobre mi...</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ducimus, velit et unde ad blanditiis est vel officiis distinctio obcaecati alias debitis omnis cum, quidem nam eius assumenda. Id, inventore!.</p>
+              <h2 class="fw-bold">Un poco sobre mi...</h2>
+              <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ducimus, velit et unde ad blanditiis est vel officiis distinctio obcaecati alias debitis omnis cum, quidem nam eius assumenda. Id, inventore!.</p>
             </div>
-            <div class="row mt-3">
-              <div class="col-lg-12 d-flex align-items-start">
+          <div class="row">
+              <div class="col-lg-12">
                 <a href="#" class="btn btn-danger rounded-0 me-3">Descargar CV</a>
-                <div class="socials-links">
-                  <a href="#"><i class="bi bi-github text-dark fs-3 me-1"></i></a>
-                  <a href="#"><i class="bi bi-linkedin text-dark fs-3 me-1"></i></a>
-                  <a href="#"><i class="bi bi-whatsapp text-dark fs-3 me-1"></i></a>
-                </div>
               </div>
-            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -100,23 +95,58 @@
 
     <!-- Seccion habilidades -->
     <section id="skills" class="text-center">
-      <h2>Habilidades</h2>
-      <div class="container-lg container-skills d-flex justify-content-center align-items-center">
-        <div class="row gap-3 justify-content-center">
-          <div class="col-3 col-lg-2 col-md-2 col-sm-3 container-img d-flex justify-content-center align-items-center p-3 bg-secondary-subtle">
-            <img src="assets/images/html.png" alt="HTML">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5">Habilidades</h2>
+            </div>
           </div>
-          <div class="col-3 col-lg-2 col-md-2 col-sm-3 container-img d-flex justify-content-center align-items-center p-3 bg-secondary-subtle">
-            <img src="assets/images/css.png" alt="CSS">
-          </div>
-          <div class="col-3 col-lg-2 col-md-2 col-sm-3 container-img d-flex justify-content-center align-items-center p-3 bg-secondary-subtle">
-            <img src="assets/images/javascript.png" alt="JavaScript">
-          </div>
-          <div class="col-3 col-lg-2 col-md-2 col-sm-3 container-img d-flex justify-content-center align-items-center p-3 bg-secondary-subtle">
-            <img src="assets/images/bootstrap.png" alt="Bootstrap">
-          </div>
-          <div class="col-3 col-lg-2 col-md-2 col-sm-3 container-img d-flex justify-content-center align-items-center p-3 bg-secondary-subtle">
-            <img src="assets/images/php.png" alt="PHP">
+        </div>
+        <div class="row">
+          <div class="container-skills d-flex justify-content-center align-items-center">
+            <div class="row gap-3 justify-content-center">
+              <div class="col-3 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center flex-column p-3 bg-secondary-subtle">
+                <div class="skill-item">
+                  <img src="assets/images/html.png" alt="HTML">
+                </div>
+                <div class="skill-name">
+                  <p class="fs-5 fw-semibold mt-1">HTML</p>
+                </div>
+              </div>
+              <div class="col-3 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center flex-column p-3 bg-secondary-subtle">
+                <div class="skill-item">
+                  <img src="assets/images/css.png" alt="CSS">
+                </div>
+                <div class="skill-name">
+                  <p class="fs-5 fw-semibold mt-1">CSS</p>
+                </div>
+              </div>
+              <div class="col-3 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center flex-column p-3 bg-secondary-subtle">
+                <div class="skill-item">
+                  <img src="assets/images/javascript.png" alt="Javascript">
+                </div>
+                <div class="skill-name">
+                  <p class="fs-5 fw-semibold mt-1">Javascript</p>
+                </div>
+              </div>
+              <div class="col-3 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center flex-column p-3 bg-secondary-subtle">
+                <div class="skill-item">
+                  <img src="assets/images/bootstrap.png" alt="Bootstrap">
+                </div>
+                <div class="skill-name">
+                  <p class="fs-5 fw-semibold mt-1">Bootstrap</p>
+                </div>
+              </div>
+              <div class="col-3 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center flex-column p-3 bg-secondary-subtle">
+                <div class="skill-item">
+                  <img src="assets/images/php.png" alt="PHP">
+                </div>
+                <div class="skill-name">
+                  <p class="fs-5 fw-semibold mt-1">PHP</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -128,7 +158,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="section-title text-center">
-              <h2 class="mb-5">Que es lo que hago?</h2>
+              <h2 class=" fw-bold mb-5">Que es lo que hago?</h2>
             </div>
           </div>
         </div>
@@ -169,52 +199,66 @@
 
     <!-- Seccion de proyectos -->
     <section id="projects" class="container-lg">
-        <h2 class="text-center">Proyectos</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5">Proyectos</h2>
+            </div>
+          </div>
+        </div>
         <div class="row">
-
             <div class="col-md-4 mb-4">
-                <div class="card rounded-0">
+                <div class="card rounded-0 position-relative">
                     <img src="assets/images/astronauta.jpg" class="card-img-top rounded-0" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Proyecto</h5>
-                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                      <a href="#" class="btn btn-primary rounded-0">Codigo</a>
-                      <a href="#" class="btn btn-danger rounded-0">Ver proyecto</a>
+                      <div class="overlay">
+                        <div class="buttons d-flex gap-2">
+                          <a href="#" class="btn btn-primary rounded-0">Codigo</a>
+                          <a href="#" class="btn btn-danger rounded-0">Ver proyecto</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
             </div>
 
             <div class="col-md-4 mb-4">
-              <div class="card rounded-0">
+              <div class="card rounded-0 position-relative">
                   <img src="assets/images/astronauta.jpg" class="card-img-top rounded-0" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Proyecto</h5>
-                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                    <a href="#" class="btn btn-primary rounded-0">Codigo</a>
-                    <a href="#" class="btn btn-danger rounded-0">Ver proyecto</a>
+                    <div class="overlay">
+                      <div class="buttons d-flex gap-2">
+                        <a href="#" class="btn btn-primary rounded-0">Codigo</a>
+                        <a href="#" class="btn btn-danger rounded-0">Ver proyecto</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
             </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card rounded-0">
-                <img src="assets/images/astronauta.jpg" class="card-img-top rounded-0" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Proyecto</h5>
-                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                  <a href="#" class="btn btn-primary rounded-0">Codigo</a>
-                  <a href="#" class="btn btn-danger rounded-0">Ver proyecto</a>
+            <div class="col-md-4 mb-4">
+              <div class="card rounded-0 position-relative">
+                  <img src="assets/images/astronauta.jpg" class="card-img-top rounded-0" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Proyecto</h5>
+                    <div class="overlay">
+                      <div class="buttons d-flex gap-2">
+                        <a href="#" class="btn btn-primary rounded-0">Codigo</a>
+                        <a href="#" class="btn btn-danger rounded-0">Ver proyecto</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-          </div>
+            </div>
 
         </div>
 
     </section>
 
     <!-- Seccion de contacto -->
-    <section class="contact py-5 bg-secondary-subtle">
-      <div class="container-lg py-4">
+    <section id="contact" class="contact py-5 bg-secondary-subtle">
+      <div class="container-lg">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="section-title text-center">
@@ -226,26 +270,44 @@
           <div class="col-md-12">
             <div class="form-contact d-flex justify-content-center align-items-center">
               <form style="width: 25rem;">
-                <div class="mb-3 row">
+                <div class="mb-3 d-flex gap-2">
                   <div class="col-lg-6">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control form-control-lg fs-6 rounded-0" id="nombre" name="nombre" placeholder="">
+                    <input type="text" class="form-control form-control-lg fs-6 rounded-0" id="nombre" name="nombre" placeholder="Nombre">
                   </div>
                   <div class="col-lg-6">
-                    <label for="asunto" class="form-label">Asunto</label>
-                    <input type="text" class="form-control form-control-lg fs-6 rounded-0" id="asunto" name="asunto" placeholder="">
+                    <input type="text" class="form-control form-control-lg fs-6 rounded-0" id="asunto" name="asunto" placeholder="Asunto">
                   </div>
                 </div>
                 <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control form-control-lg fs-6 rounded-0" id="email" name="email" placeholder="">
+                  <input type="email" class="form-control form-control-lg fs-6 rounded-0" id="email" name="email" placeholder="Correo electronico">
                 </div>
                 <div class="mb-3">
-                  <label for="mensaje" class="form-label">Mensaje</label>
-                  <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control form-control-lg fs-6 rounded-0" placeholder=""></textarea>
+                  <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control form-control-lg fs-6 rounded-0" placeholder="Deje su mensaje aqui..."></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary rounded-0 d-block w-100">Enviar mensaje</button>
               </form>
+            </div>
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8">
+                <div class="section-title text-center">
+                  <h5 class="fw-bold mb-2">Tambien me puedes contactar por:</h5>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="socials-content d-flex justify-content-center align-items-center gap-3">
+                  <div class="social-item">
+                    <a href="#"><i class="bi bi-github text-dark fs-1 me-1"></i></a>
+                  </div>
+                  <div class="social-item">
+                    <a href="#"><i class="bi bi-linkedin text-dark fs-1 me-1"></i></a>
+                  </div>
+                  <div class="social-item">
+                    <a href="#"><i class="bi bi-whatsapp text-dark fs-1 me-1"></i></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

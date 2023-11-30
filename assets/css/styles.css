@@ -1,22 +1,20 @@
 :root{
     /* Paleta de colores */
-    --color1: #7e5686;
-    --color2: #a5aad9;
-    --color3: #e8f9a2;
-    --color4: #f8a13f;
-    --color5: #ba3c3d;
+    --color1: #726EFF;
+    --color2: #5AFFE7;
+    --color3: #08C6AB;
+    --color4: #37465B;
+    --color5: #212B38;
 
-    --color6:#243757;
-    --color7:#3a5f6f;
-    --color8:#dad5b7;
-    --color9:#c2b79b;
-    --color10:#665e52;
+    --color6: #A0D2EB;
+    --color7: #E5EAF5;
+    --color8: #D08DF4;
+    --color9: #8458B3;
+    --color10: #494D5F;
+}
 
-    --color11:#352640;
-    --color12:#92394b;
-    --color13:#a9767a;
-    --color14:#d1b4a2;
-    --color15:#f1f2ce;
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Seccion con fondo */
@@ -46,7 +44,36 @@
 }
 
 /* Seccion habilidades */
-.container-img > img{
-    width: 60%;
+.skill-item > img{
+    width: 40%;
     object-fit: cover;
+}
+
+/* Seccion proyectos */
+.overlay{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(36, 55, 87, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay:hover{
+    opacity: 1;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+/* Responsive */
+@media (max-width: 400px){
+    .foto-container{
+        width: 300px;
+        height: 300px;
+    }
 }
