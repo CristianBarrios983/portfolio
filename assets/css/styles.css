@@ -61,11 +61,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .5s;
 }
 
 .overlay:hover{
     opacity: 1;
-    transition: .5s;
     cursor: pointer;
 }
 
