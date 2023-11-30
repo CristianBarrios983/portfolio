@@ -21,7 +21,7 @@
 
 /* Seccion con fondo */
 
-.seccion-con-fondo{
+.home{
     background-image: url('../images/fondo.jpg');
     background-position: center;
     background-size: cover;
@@ -31,8 +31,8 @@
 /* Seccion sobre mi */
 
 .foto-container{
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     border: 7px solid var(--color7);
     overflow: hidden;

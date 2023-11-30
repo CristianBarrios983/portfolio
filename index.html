@@ -17,7 +17,7 @@
     
     <header>
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-            <div class="container-fluid">
+            <div class="container">
               <a class="navbar-brand" href="#">Mi portafolio</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -25,13 +25,16 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#about-me">Sobre mi</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#skills">Habilidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Servicios</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#projecs">Proyectos</a>
@@ -46,13 +49,18 @@
     </header>
 
     <!-- Sección con fondo de imagen -->
-    <section class="seccion-con-fondo d-flex justify-content-center align-items-center min-vh-100">
+    <section id="home" class="home d-flex justify-content-center align-items-center min-vh-100">
         <div class="container p-4">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1 class="fs-1 fw-bold text-white">¡Hola!</h1>
-                    <p class="fs-3 fw-bolder text-white">Soy un <span class="text-primary">desarrollador web</span></p>
-                    <a href="#projects" class="btn btn-danger fs-5 rounded-0">Mis proyectos</a>
+                    <div class="texts">
+                      <h1 class="fs-1 fw-bold text-white">¡Hola!</h1>
+                      <p class="fs-3 fw-bolder text-white">Soy un <span class="text-warning">desarrollador web</span></p>
+                    </div>
+                    <div class="buttons">
+                      <a href="#projects" class="btn btn-danger fs-5 rounded-0 me-3">Mis proyectos</a>
+                      <a href="#contact" class="btn btn-primary fs-5 rounded-0">Contactame</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,52 +70,97 @@
     <section id="about-me">
       <div class="container p-4">
         <div class="row">
-            <!-- Contenedor de la foto -->
-            <div class="col-md-6 d-flex justify-content-center align-items-center">
-                <div class="foto-container">
-                    <img src="assets/images/mi-foto.jpg" alt="" class="img-fluid">
-                </div>
+          <!-- Contenedor de la foto -->
+          <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <div class="foto-container">
+              <img src="assets/images/astronauta.jpg" alt="" class="img-fluid">
             </div>
-            <!-- Contenedor de la descripción -->
-            <div class="col-md-6">
-                <div class="descripcion-container text-center">
-                    <h2>Hola!, yo soy...</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ducimus, velit et unde ad blanditiis est vel officiis distinctio obcaecati alias debitis omnis cum, quidem nam eius assumenda. Id, inventore!.</p>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12 d-flex align-items-center">
-                    <a href="#" class="btn btn-danger rounded-0 me-5">Descargar CV</a>
-                    <div class="socials-links">
-                      <a href="#"><i class="bi bi-github text-dark fs-3 me-1"></i></a>
-                      <a href="#"><i class="bi bi-linkedin text-dark fs-3 me-1"></i></a>
-                      <a href="#"><i class="bi bi-whatsapp text-dark fs-3 me-1"></i></a>
-                    </div>
-                  </div>
-                </div>
+          </div>
+          <!-- Contenedor de la descripción -->
+          <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">
+            <div class="descripcion-container text-center text-md-start">
+              <h2>Un poco sobre mi...</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ducimus, velit et unde ad blanditiis est vel officiis distinctio obcaecati alias debitis omnis cum, quidem nam eius assumenda. Id, inventore!.</p>
             </div>
+            <div class="row mt-3">
+              <div class="col-lg-12 d-flex align-items-start">
+                <a href="#" class="btn btn-danger rounded-0 me-3">Descargar CV</a>
+                <div class="socials-links">
+                  <a href="#"><i class="bi bi-github text-dark fs-3 me-1"></i></a>
+                  <a href="#"><i class="bi bi-linkedin text-dark fs-3 me-1"></i></a>
+                  <a href="#"><i class="bi bi-whatsapp text-dark fs-3 me-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+
     <!-- Seccion habilidades -->
     <section id="skills" class="text-center">
       <h2>Habilidades</h2>
-      <div class="container container-skills d-flex justify-content-center align-items-center">
-        <div class="row">
-          <div class="col-4 col-lg-3 col-md-4 col-sm-4 container-img d-flex justify-content-center align-items-center p-3">
+      <div class="container-lg container-skills d-flex justify-content-center align-items-center">
+        <div class="row gap-3 justify-content-center">
+          <div class="col-3 col-lg-2 col-md-2 col-sm-3 container-img d-flex justify-content-center align-items-center p-3 bg-secondary-subtle">
             <img src="assets/images/html.png" alt="HTML">
           </div>
-          <div class="col-4 col-lg-3 col-md-3 col-sm-4 container-img d-flex justify-content-center align-items-center p-3">
+          <div class="col-3 col-lg-2 col-md-2 col-sm-3 container-img d-flex justify-content-center align-items-center p-3 bg-secondary-subtle">
             <img src="assets/images/css.png" alt="CSS">
           </div>
-          <div class="col-4 col-lg-3 col-md-3 col-sm-4 container-img d-flex justify-content-center align-items-center p-3">
+          <div class="col-3 col-lg-2 col-md-2 col-sm-3 container-img d-flex justify-content-center align-items-center p-3 bg-secondary-subtle">
             <img src="assets/images/javascript.png" alt="JavaScript">
           </div>
-          <div class="col-4 col-lg-3 col-md-3 col-sm-4 container-img d-flex justify-content-center align-items-center p-3">
+          <div class="col-3 col-lg-2 col-md-2 col-sm-3 container-img d-flex justify-content-center align-items-center p-3 bg-secondary-subtle">
             <img src="assets/images/bootstrap.png" alt="Bootstrap">
           </div>
-          <div class="col-4 col-lg-3 col-md-3 col-sm-4 container-img d-flex justify-content-center align-items-center p-3">
+          <div class="col-3 col-lg-2 col-md-2 col-sm-3 container-img d-flex justify-content-center align-items-center p-3 bg-secondary-subtle">
             <img src="assets/images/php.png" alt="PHP">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion servicios -->
+    <section class="services py-5" id="services">
+      <div class="container-lg py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="mb-5">Que es lo que hago?</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="service-item py-4 rounded-0 border bg-secondary-subtle">
+              <div class="icon my-3 text-danger fs-2">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h3 class="fs-3 py-2">Desarrollo Web</h3>
+              <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, numquam.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="service-item py-4 rounded-0 border bg-secondary-subtle">
+              <div class="icon my-3 text-danger fs-2">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h3 class="fs-3 py-2">Diseños creativos</h3>
+              <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, numquam.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="service-item py-4 rounded-0 border bg-secondary-subtle">
+              <div class="icon my-3 text-danger fs-2">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h3 class="fs-3 py-2">Mantenimiento Web</h3>
+              <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, numquam.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -115,12 +168,12 @@
     
 
     <!-- Seccion de proyectos -->
-    <section id="projects" class="container">
+    <section id="projects" class="container-lg">
         <h2 class="text-center">Proyectos</h2>
         <div class="row">
 
             <div class="col-md-4 mb-4">
-                <div class="card rounded-0" style="width: 18rem;">
+                <div class="card rounded-0">
                     <img src="assets/images/astronauta.jpg" class="card-img-top rounded-0" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Proyecto</h5>
@@ -131,41 +184,82 @@
                   </div>
             </div>
 
+            <div class="col-md-4 mb-4">
+              <div class="card rounded-0">
+                  <img src="assets/images/astronauta.jpg" class="card-img-top rounded-0" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Proyecto</h5>
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                    <a href="#" class="btn btn-primary rounded-0">Codigo</a>
+                    <a href="#" class="btn btn-danger rounded-0">Ver proyecto</a>
+                  </div>
+                </div>
+            </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card rounded-0">
+                <img src="assets/images/astronauta.jpg" class="card-img-top rounded-0" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Proyecto</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="#" class="btn btn-primary rounded-0">Codigo</a>
+                  <a href="#" class="btn btn-danger rounded-0">Ver proyecto</a>
+                </div>
+              </div>
+          </div>
+
         </div>
 
     </section>
 
     <!-- Seccion de contacto -->
-    <section id="contact" class="d-flex justify-content-center align-items-center flex-column p-4 bg-primary-subtle">
-      <h2 class="text-center">Contactame</h2>
-      <form style="width: 25rem;">
-        <div class="mb-3 row">
-          <div class="col">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control rounded-0" id="nombre" name="nombre" placeholder="">
-          </div>
-          <div class="col">
-            <label for="asunto" class="form-label">Asunto</label>
-            <input type="text" class="form-control rounded-0" id="asunto" name="asunto" placeholder="">
+    <section class="contact py-5 bg-secondary-subtle">
+      <div class="container-lg py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5">Contactame</h2>
+            </div>
           </div>
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control rounded-0" id="email" name="email" placeholder="">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-contact d-flex justify-content-center align-items-center">
+              <form style="width: 25rem;">
+                <div class="mb-3 row">
+                  <div class="col-lg-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control form-control-lg fs-6 rounded-0" id="nombre" name="nombre" placeholder="">
+                  </div>
+                  <div class="col-lg-6">
+                    <label for="asunto" class="form-label">Asunto</label>
+                    <input type="text" class="form-control form-control-lg fs-6 rounded-0" id="asunto" name="asunto" placeholder="">
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control form-control-lg fs-6 rounded-0" id="email" name="email" placeholder="">
+                </div>
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control form-control-lg fs-6 rounded-0" placeholder=""></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary rounded-0 d-block w-100">Enviar mensaje</button>
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control rounded-0" placeholder=""></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary rounded-0 d-block w-100">Enviar mensaje</button>
-      </form>
+      </div>
     </section>
-    
 
     <!-- Pie de pagina -->
-    <footer class="bg-dark text-white p-4">
-      <div class="footer-content d-flex justify-content-center align-items-center">
-          <p class="text-center">Derechos reservados por @CristianBarrios</p>
+    <footer class="bg-dark py-4">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="text-white m-0 text-center">&copy; Cristian Barrios 2023</p>
+          </div>
+        </div>
       </div>
   </footer>
 
