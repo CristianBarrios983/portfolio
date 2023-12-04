@@ -1,27 +1,59 @@
 {
     "Proyectos": [
         {
-            "nombre-proyecto" : "Proyecto 1",
-            "descripcion" : "Proyecto 1",
-            "url-ver" : "#",
-            "url-codigo" : "#",
-            "imagen" : "assets/images/astronauta.jpg"
+            "nombre-proyecto" : "Pagina de perfumes",
+            "descripcion" : "",
+            "url-ver" : "https://cristianbarrios983.github.io/landing-perfume-shop/#",
+            "url-codigo" : "https://github.com/CristianBarrios983/landing-perfume-shop.git",
+            "imagen" : "/assets/images/proyecto-landing-perfume-shop.png"
         },
 
         {
-            "nombre-proyecto" : "Proyecto 2",
-            "descripcion" : "Proyecto 2",
-            "url-ver" : "#",
-            "url-codigo" : "#",
-            "imagen" : "assets/images/astronauta.jpg"
+            "nombre-proyecto" : "Studio Bad Dog",
+            "descripcion" : "",
+            "url-ver" : "https://cristianbarrios983.github.io/sitio-baddog/",
+            "url-codigo" : "https://github.com/CristianBarrios983/sitio-baddog.git",
+            "imagen" : "/assets/images/proyecto-sitio-baddog.png"
         },
 
         {
-            "nombre-proyecto" : "Proyecto 3",
-            "descripcion" : "Proyecto 3",
-            "url-ver" : "#",
-            "url-codigo" : "#",
-            "imagen" : "assets/images/astronauta.jpg"
+            "nombre-proyecto" : "Cake Shop",
+            "descripcion" : "",
+            "url-ver" : "https://cristianbarrios983.github.io/The-Cake-Shop/",
+            "url-codigo" : "https://github.com/CristianBarrios983/The-Cake-Shop.git",
+            "imagen" : "/assets/images/proyecto-cake-shop.png"
+        },
+
+        {
+            "nombre-proyecto" : "Centro medico app",
+            "descripcion" : "",
+            "url-ver" : "",
+            "url-codigo" : "https://github.com/CristianBarrios983/centro-medico-app.git",
+            "imagen" : "/assets/images/proyecto-centro-medico-app.png"
+        },
+
+        {
+            "nombre-proyecto" : "Login-Registro",
+            "descripcion" : "",
+            "url-ver" : "",
+            "url-codigo" : "https://github.com/CristianBarrios983/login-registro.git",
+            "imagen" : "/assets/images/proyecto-login-registro.png"
+        },
+
+        {
+            "nombre-proyecto" : "Login-crud MVC",
+            "descripcion" : "",
+            "url-ver" : "",
+            "url-codigo" : "https://github.com/CristianBarrios983/login-crud-mvc.git",
+            "imagen" : "/assets/images/proyecto-login-crud-mvc.png"
+        },
+
+        {
+            "nombre-proyecto" : "Mini Ecommerce",
+            "descripcion" : "",
+            "url-ver" : "",
+            "url-codigo" : "https://github.com/CristianBarrios983/pagina-productos.git",
+            "imagen" : "/assets/images/proyecto-mini-ecommerce.png"
         }
     ]
 }

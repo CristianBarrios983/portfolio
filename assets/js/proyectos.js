@@ -1,5 +1,5 @@
 const cargarProyectos = () => {
-    fetch('../../proyectos.json')
+    fetch('/proyectos.json')
         .then(respuesta => respuesta.json())
         .then(proyectos => {
             // Obtiene el contenedor para agregar las tarjetas
@@ -16,8 +16,8 @@ const cargarProyectos = () => {
                             <h5 class="card-title">${proyecto["nombre-proyecto"]}</h5>
                             <div class="overlay">
                                 <div class="buttons d-flex gap-2">
-                                    <a href="${proyecto['url-codigo']}" class="btn btn-primary rounded-0 fs-5">Codigo</a>
-                                    <a href="${proyecto['url-ver']}" class="btn btn-danger rounded-0 fs-5">Ver proyecto</a>
+                                    ${proyecto['url-codigo'] ? `<a href="${proyecto['url-codigo']}" class="btn btn-primary rounded-0 fs-5" target="_blank">Codigo</a>` : ''}
+                                    ${proyecto['url-ver'] ? `<a href="${proyecto['url-ver']}" class="btn btn-danger rounded-0 fs-5" target="_blank">Ver proyecto</a>` : ''}
                                 </div>
                             </div>
                         </div>

@@ -1,16 +1,10 @@
 :root{
     /* Paleta de colores */
-    --color1: #726EFF;
-    --color2: #5AFFE7;
-    --color3: #08C6AB;
-    --color4: #37465B;
-    --color5: #212B38;
-
-    --color6: #A0D2EB;
-    --color7: #E5EAF5;
-    --color8: #D08DF4;
-    --color9: #8458B3;
-    --color10: #494D5F;
+    --iceberg: #D9ECF2;
+    --froly: #F56A79;
+    --coral-red: #FF414D;
+    --eastern-blue: #1AA6B7;
+    --prussian-blue: #002D40;
 }
 
 body{
@@ -32,7 +26,7 @@ body{
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    border: 7px solid var(--color7);
+    border: 7px solid var(--iceberg);
     overflow: hidden;
 }
 
@@ -55,7 +49,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(36, 55, 87, 0.8);
+    background-color: rgb(0, 46, 66, 0.7);
     width: 100%;
     height: 100%;
     display: flex;
@@ -69,6 +63,22 @@ body{
     cursor: pointer;
 }
 
+/* Sobreescribiendo colores de botones de bootstrap */
+.btn-primary:hover{
+    background-color: var(--eastern-blue);
+    border-color: var(--eastern-blue);
+}
+
+.btn-danger:hover{
+    background-color: var(--coral-red);
+    border-color: var(--coral-red);
+}
+
+/* Enlaces de bootstrap */
+.nav-link:hover{
+    color: var(--eastern-blue);
+    transform: scale(1.1);
+}
 
 /* Responsive */
 @media (max-width: 400px){

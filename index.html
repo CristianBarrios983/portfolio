@@ -27,7 +27,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
+                    <a class="nav-link" aria-current="page" href="#home">Inicio</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#about-me">Sobre mi</a>
@@ -46,8 +46,8 @@
                   </li>
                   <li class="nav-item">
                     <div class="form-check form-switch d-flex justify-content-center align-items-center">
-                      <input class="form-check-input me-1" type="checkbox" role="switch" id="darkModeToggle">
-                      <label class="form-check-label nav-link" for="flexSwitchCheckDefault"><i class="bi bi-moon-stars-fill" id="icon"></i></label>
+                      <input class="form-check-input me-1 text-white" type="checkbox" role="switch" id="darkModeToggle">
+                      <label class="form-check-label nav-link disabled" for="flexSwitchCheckDefault"><i class="bi bi-moon-stars-fill" id="icon"></i></label>
                     </div>
                   </li>
                 </ul>
@@ -62,7 +62,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="texts">
-                      <h1 class="fs-1 fw-bold text-white">¡Hola!</h1>
+                      <h1 class="display-2 fw-bold text-white">¡Hola!</h1>
                       <p class="fs-3 fw-bolder text-white">
                         <span class="typed"></span>
                       </p>
@@ -98,7 +98,7 @@
             </div>
           <div class="row">
               <div class="col-lg-12">
-                <a href="#" class="btn btn-danger rounded-0 me-3">Descargar CV</a>
+                <a href="assets/files/curriculum.pdf" target="_blank" class="btn btn-danger fs-5 rounded-0 me-3">Descargar CV</a>
               </div>
           </div>
           </div>
@@ -190,7 +190,7 @@
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="service-item py-4 rounded-0 border bg-secondary-subtle">
               <div class="icon my-3 text-danger fs-2">
-                <i class="bi bi-code-slash"></i>
+                <i class="bi bi-brush"></i>
               </div>
               <h3 class="fs-3 py-2">Diseños creativos</h3>
               <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, numquam.</p>
@@ -200,7 +200,7 @@
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="service-item py-4 rounded-0 border bg-secondary-subtle">
               <div class="icon my-3 text-danger fs-2">
-                <i class="bi bi-code-slash"></i>
+                <i class="bi bi-gear"></i>
               </div>
               <h3 class="fs-3 py-2">Mantenimiento Web</h3>
               <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, numquam.</p>
@@ -220,7 +220,7 @@
             </div>
           </div>
         </div>
-        <div class="row" id="proyectos">
+        <div class="row justify-content-center" id="proyectos">
             <!-- Card de proyecto -->
             <!-- <div class="col-md-4 mb-4">
                 <div class="card rounded-0 position-relative">
@@ -261,19 +261,19 @@
                 <input type="hidden" name="_subject" value="Nuevo mensaje">
                 <div class="mb-3 d-flex gap-2">
                   <div class="">
-                    <input type="text" class="form-control form-control-lg fs-6 rounded-0" id="nombre" name="nombre" placeholder="Nombre">
+                    <input type="text" class="form-control form-control-lg fs-6 rounded-0" id="nombre" name="nombre" placeholder="Nombre" required>
                   </div>
                   <div class="">
-                    <input type="text" class="form-control form-control-lg fs-6 rounded-0" id="asunto" name="asunto" placeholder="Asunto">
+                    <input type="text" class="form-control form-control-lg fs-6 rounded-0" id="asunto" name="asunto" placeholder="Asunto" required>
                   </div>
                 </div>
                 <div class="mb-3">
-                  <input type="email" class="form-control form-control-lg fs-6 rounded-0" id="email" name="email" placeholder="Correo electronico">
+                  <input type="email" class="form-control form-control-lg fs-6 rounded-0" id="email" name="email" placeholder="Correo electronico" required>
                 </div>
                 <div class="mb-3">
-                  <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control form-control-lg fs-6 rounded-0" placeholder="Deje su mensaje aqui..."></textarea>
+                  <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control form-control-lg fs-6 rounded-0" placeholder="Deje su mensaje aqui..." required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary rounded-0 d-block w-100">Enviar mensaje</button>
+                <button type="submit" class="btn btn-primary fs-5 rounded-0 d-block w-100">Enviar mensaje</button>
               </form>
             </div>
             <div class="row justify-content-center mt-5">
@@ -287,13 +287,13 @@
               <div class="col-md-12">
                 <div class="socials-content d-flex justify-content-center align-items-center gap-3 text-dark">
                   <div class="social-item">
-                    <a href="#"><i class="bi bi-github fs-1 me-1 text-dark"></i></a>
+                    <a href="#" class="nav-link"><i class="bi bi-github fs-1 me-1"></i></a>
                   </div>
                   <div class="social-item">
-                    <a href="#"><i class="bi bi-linkedin fs-1 me-1 text-dark"></i></a>
+                    <a href="#" class="nav-link"><i class="bi bi-linkedin fs-1 me-1"></i></a>
                   </div>
                   <div class="social-item">
-                    <a href="#"><i class="bi bi-whatsapp fs-1 me-1 text-dark"></i></a>
+                    <a href="#" class="nav-link"><i class="bi bi-whatsapp fs-1 me-1"></i></a>
                   </div>
                 </div>
               </div>
