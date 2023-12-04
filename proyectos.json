@@ -1,0 +1,27 @@
+{
+    "Proyectos": [
+        {
+            "nombre-proyecto" : "Proyecto 1",
+            "descripcion" : "Proyecto 1",
+            "url-ver" : "#",
+            "url-codigo" : "#",
+            "imagen" : "assets/images/astronauta.jpg"
+        },
+
+        {
+            "nombre-proyecto" : "Proyecto 2",
+            "descripcion" : "Proyecto 2",
+            "url-ver" : "#",
+            "url-codigo" : "#",
+            "imagen" : "assets/images/astronauta.jpg"
+        },
+
+        {
+            "nombre-proyecto" : "Proyecto 3",
+            "descripcion" : "Proyecto 3",
+            "url-ver" : "#",
+            "url-codigo" : "#",
+            "imagen" : "assets/images/astronauta.jpg"
+        }
+    ]
+}
