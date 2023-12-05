@@ -1,5 +1,5 @@
 const cargarProyectos = () => {
-    fetch('/proyectos.json')
+    fetch('./proyectos.json')
         .then(respuesta => respuesta.json())
         .then(proyectos => {
             // Obtiene el contenedor para agregar las tarjetas
