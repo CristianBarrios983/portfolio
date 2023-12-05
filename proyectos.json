@@ -5,7 +5,7 @@
             "descripcion" : "",
             "url-ver" : "https://cristianbarrios983.github.io/landing-perfume-shop/#",
             "url-codigo" : "https://github.com/CristianBarrios983/landing-perfume-shop.git",
-            "imagen" : "/assets/images/proyecto-landing-perfume-shop.png"
+            "imagen" : "./assets/images/proyecto-landing-perfume-shop.png"
         },
 
         {
@@ -13,7 +13,7 @@
             "descripcion" : "",
             "url-ver" : "https://cristianbarrios983.github.io/sitio-baddog/",
             "url-codigo" : "https://github.com/CristianBarrios983/sitio-baddog.git",
-            "imagen" : "/assets/images/proyecto-sitio-baddog.png"
+            "imagen" : "./assets/images/proyecto-sitio-baddog.png"
         },
 
         {
@@ -21,7 +21,7 @@
             "descripcion" : "",
             "url-ver" : "https://cristianbarrios983.github.io/The-Cake-Shop/",
             "url-codigo" : "https://github.com/CristianBarrios983/The-Cake-Shop.git",
-            "imagen" : "/assets/images/proyecto-cake-shop.png"
+            "imagen" : "./assets/images/proyecto-cake-shop.png"
         },
 
         {
@@ -29,7 +29,7 @@
             "descripcion" : "",
             "url-ver" : "",
             "url-codigo" : "https://github.com/CristianBarrios983/centro-medico-app.git",
-            "imagen" : "/assets/images/proyecto-centro-medico-app.png"
+            "imagen" : "./assets/images/proyecto-centro-medico-app.png"
         },
 
         {
@@ -37,7 +37,7 @@
             "descripcion" : "",
             "url-ver" : "",
             "url-codigo" : "https://github.com/CristianBarrios983/login-registro.git",
-            "imagen" : "/assets/images/proyecto-login-registro.png"
+            "imagen" : "./assets/images/proyecto-login-registro.png"
         },
 
         {
@@ -45,7 +45,7 @@
             "descripcion" : "",
             "url-ver" : "",
             "url-codigo" : "https://github.com/CristianBarrios983/login-crud-mvc.git",
-            "imagen" : "/assets/images/proyecto-login-crud-mvc.png"
+            "imagen" : "./assets/images/proyecto-login-crud-mvc.png"
         },
 
         {
@@ -53,7 +53,7 @@
             "descripcion" : "",
             "url-ver" : "",
             "url-codigo" : "https://github.com/CristianBarrios983/pagina-productos.git",
-            "imagen" : "/assets/images/proyecto-mini-ecommerce.png"
+            "imagen" : "./assets/images/proyecto-mini-ecommerce.png"
         }
     ]
 }
