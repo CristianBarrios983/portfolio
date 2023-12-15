@@ -88,6 +88,11 @@
           <div class="col-md-6 d-flex justify-content-center align-items-center mb-5">
             <div class="foto-container">
               <img src="assets/images/astronauta.jpg" alt="" class="img-fluid">
+              <div class="overlay-socials">
+                <a href="#" class="nav-link"><i class="bi bi-github fs-3"></i></a>
+                <a href="#" class="nav-link"><i class="bi bi-linkedin fs-3"></i></a>
+                <a href="#" class="nav-link"><i class="bi bi-whatsapp fs-3"></i></a>
+              </div>
             </div>
           </div>
           <!-- Contenedor de la descripción -->
@@ -221,22 +226,8 @@
           </div>
         </div>
         <div class="row justify-content-center" id="proyectos">
-            <!-- Card de proyecto -->
-            <!-- <div class="col-md-4 mb-4">
-                <div class="card rounded-0 position-relative">
-                    <img src="assets/images/astronauta.jpg" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Proyecto</h5>
-                      <div class="overlay">
-                        <div class="buttons d-flex gap-2">
-                          <a href="#" class="btn btn-primary rounded-0 fs-5">Codigo</a>
-                          <a href="#" class="btn btn-danger rounded-0 fs-5">Ver proyecto</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div> -->
-            <!-- Fin card de proyecto -->
+
+            <!-- Cards de proyectos -->
 
         </div>
 
@@ -255,23 +246,35 @@
         <div class="row">
           <div class="col-md-12">
             <div class="form-contact d-flex justify-content-center align-items-center">
-              <form id="form" action="https://formsubmit.co/barrioscristian.9908@gmail.com" method="POST" style="width: 25rem;">
+              <form class="needs-validation" id="form" action="https://formsubmit.co/barrioscristian.9908@gmail.com" method="POST" style="width: 25rem;" novalidate>
                 <!-- Para evitar rellenar captcha -->
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="Nuevo mensaje">
                 <div class="mb-3 d-flex gap-2">
                   <div class="">
                     <input type="text" class="form-control form-control-lg fs-6 rounded-0" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <div class="invalid-feedback">
+                      El campo no pueden estar vacios
+                    </div>
                   </div>
                   <div class="">
                     <input type="text" class="form-control form-control-lg fs-6 rounded-0" id="asunto" name="asunto" placeholder="Asunto" required>
+                    <div class="invalid-feedback">
+                      El campo no pueden estar vacios
+                    </div>
                   </div>
                 </div>
                 <div class="mb-3">
                   <input type="email" class="form-control form-control-lg fs-6 rounded-0" id="email" name="email" placeholder="Correo electronico" required>
+                  <div class="invalid-feedback">
+                    Ingrese un correo por favor
+                  </div>
                 </div>
                 <div class="mb-3">
                   <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control form-control-lg fs-6 rounded-0" placeholder="Deje su mensaje aqui..." required></textarea>
+                  <div class="invalid-feedback">
+                    Debe escribir un mensaje
+                  </div>
                 </div>
                 <button type="submit" class="btn btn-primary fs-5 rounded-0 d-block w-100">Enviar mensaje</button>
               </form>
@@ -325,7 +328,9 @@
       <script src="assets/js/main.js"></script>
       <!-- Dark Mode -->
       <script src="assets/js/dark-mode.js"></script>
-      <!-- Form.js -->
+      <!-- Proyectos.js -->
       <script src="assets/js/proyectos.js"></script>
+      <!-- Bootstrap-validation.js -->
+      <script src="assets/js/bootstrap-validation.js"></script>
 </body>
 </html>
