@@ -26,6 +26,17 @@ body{
     font-family: 'Poppins', 'Monserrat', sans-serif;
 }
 
+/* Seccion Menu */
+#nav{
+    transition: all 0.9s ease;
+}
+
+.fixed{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
 /* Seccion home */
 
 .home{

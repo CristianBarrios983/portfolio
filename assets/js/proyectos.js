@@ -9,6 +9,7 @@ const cargarProyectos = () => {
             proyectos.Proyectos.forEach(proyecto => {
                 const tarjeta = document.createElement('div');
                 tarjeta.className = 'col-md-4 mb-4 proyecto';
+                tarjeta.setAttribute('data-aos', 'fade-up');
                 tarjeta.innerHTML = `
                     <div class="card rounded-0 position-relative">
                         <img src="${proyecto.imagen}" class="card-img-top rounded-0" alt="...">
