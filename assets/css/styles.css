@@ -27,15 +27,26 @@ body{
 }
 
 /* Seccion Menu */
-#nav{
-    transition: all 0.9s ease;
-}
 
-.fixed{
+#nav.fixed{
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 1;
+    animation: fadeInOut 0.7s ease;
 }
+
+@keyframes fadeInOut {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 /* Seccion home */
 
@@ -89,12 +100,37 @@ body{
 }
 
 /* Seccion habilidades */
+
+.skill{
+    transition: background-color 0.7s ease !important;
+}
+
+.skill:hover{
+    background-color: #1AA6B7 !important;
+    color: #fff;
+    cursor: pointer;
+}
+
 .skill-item > img{
     width: 40%;
     object-fit: cover;
 }
 
+/* Seccion de servicios */
+
+.service-item{
+    transition: background-color 0.7s ease, transform 0.7s ease;
+}
+
+.service-item:hover{
+    background-color: #F56A79 !important;
+    color: #fff !important;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 /* Seccion proyectos */
+
 .card-img-top{
     transition: filter 0.7s ease-out;
 }
@@ -123,6 +159,7 @@ body{
 }
 
 /* Sobreescribiendo colores de botones de bootstrap */
+
 .btn-primary:hover{
     background-color: var(--eastern-blue);
     border-color: var(--eastern-blue);
@@ -134,11 +171,13 @@ body{
 }
 
 /* Enlaces de bootstrap */
+
 .nav-link:hover{
     color: var(--eastern-blue);
 }
 
 /* Responsive */
+
 @media (max-width: 400px){
     .foto-container{
         width: 300px;
