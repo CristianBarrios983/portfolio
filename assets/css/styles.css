@@ -11,14 +11,14 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;  
-    src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+    src: url('https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400; 
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+    src: url('https://fonts.gstatic.com/s/montserrat/v22/JTUSjIg1_i6t8kCHKm459Wlhzg.woff2') format('woff2');
 }
 
 
@@ -112,11 +112,6 @@ body{
     cursor: pointer;
 }
 
-/* .skill-item > img{
-    width: 40%;
-    object-fit: cover;
-} */
-
 /* Seccion de servicios */
 
 .service-item{
@@ -126,7 +121,7 @@ body{
 .service-item:hover{
     background-color: #FF414D !important;
     color: #fff !important;
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
