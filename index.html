@@ -23,8 +23,8 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="nav">
             <div class="container">
-              <a class="navbar-brand" href="#">Mi portafolio</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand">Mi portafolio</a>
+              <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -92,9 +92,9 @@
             <div class="foto-container" data-aos="fade-up">
               <img src="assets/images/astronauta.jpg" alt="" class="img-fluid">
               <div class="overlay-socials">
-                <a href="#" class="nav-link"><i class="bi bi-github fs-2"></i></a>
-                <a href="#" class="nav-link"><i class="bi bi-linkedin fs-2"></i></a>
-                <a href="#" class="nav-link"><i class="bi bi-whatsapp fs-2"></i></a>
+                <a href="#" class="nav-link"><i class="fa-brands fa-github fs-1"></i></a>
+                <a href="#" class="nav-link"><i class="fa-brands fa-linkedin fs-1"></i></a>
+                <a href="#" class="nav-link"><i class="fa-brands fa-whatsapp fs-1"></i></a>
               </div>
             </div>
           </div>
@@ -188,7 +188,7 @@
           <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
             <div class="service-item p-4 rounded-0 bg-secondary-subtle">
               <div class="icon my-3 fs-2">
-                <i class="bi bi-code-slash"></i>
+                <i class="fa-solid fa-code"></i>
               </div>
               <h3 class="fs-3 py-2">Desarrollo Web</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, numquam.</p>
@@ -198,7 +198,7 @@
           <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
             <div class="service-item p-4 rounded-0 bg-secondary-subtle">
               <div class="icon my-3 fs-2">
-                <i class="bi bi-brush"></i>
+                <i class="fa-solid fa-paintbrush"></i>
               </div>
               <h3 class="fs-3 py-2">Diseños creativos</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, numquam.</p>
@@ -208,7 +208,7 @@
           <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
             <div class="service-item p-4 rounded-0 bg-secondary-subtle">
               <div class="icon my-3 fs-2">
-                <i class="bi bi-gear"></i>
+                <i class="fa-solid fa-gear"></i>
               </div>
               <h3 class="fs-3 py-2">Mantenimiento Web</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, numquam.</p>
@@ -249,7 +249,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="form-contact d-flex justify-content-center align-items-center">
-              <form class="needs-validation" id="form" action="https://formsubmit.co/barrioscristian.9908@gmail.com" method="POST" style="width: 25rem;" novalidate>
+              <form id="contactform" class="needs-validation" id="form" action="https://formsubmit.co/be755ffbd316d9df3dc35f59bd1cb763" method="POST" style="width: 25rem;" novalidate>
                 <!-- Para evitar rellenar captcha -->
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="Nuevo mensaje">
@@ -295,13 +295,13 @@
               <div class="col-md-12" data-aos="fade-up">
                 <div class="socials-content d-flex justify-content-center align-items-center gap-3 text-dark">
                   <div class="social-item">
-                    <a href="#" class="nav-link"><i class="bi bi-github fs-1 me-1"></i></a>
+                    <a href="#" class="nav-link"><i class="fa-brands fa-github fs-1 me-1"></i></a>
                   </div>
                   <div class="social-item">
-                    <a href="#" class="nav-link"><i class="bi bi-linkedin fs-1 me-1"></i></a>
+                    <a href="#" class="nav-link"><i class="fa-brands fa-linkedin fs-1 me-1"></i></a>
                   </div>
                   <div class="social-item">
-                    <a href="#" class="nav-link"><i class="bi bi-whatsapp fs-1 me-1"></i></a>
+                    <a href="#" class="nav-link"><i class="fa-brands fa-whatsapp fs-1 me-1"></i></a>
                   </div>
                 </div>
               </div>
@@ -350,5 +350,9 @@
       </script>
       <!-- Font-Awesome -->
       <script src="https://kit.fontawesome.com/45fc83ca5a.js" crossorigin="anonymous"></script>
+      <!-- Form.js -->
+      <script src="assets/js/form.js"></script>
+      <!-- SweetAlert2 libreria -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
