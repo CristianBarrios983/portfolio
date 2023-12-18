@@ -11,11 +11,22 @@ async function handleSubmit(event) {
         return;
     }
 
-    // Mostrar loader utilizando Bootstrap
-    const loader = document.createElement('div');
-    loader.className = 'overlay-form';
-    loader.innerHTML = '<div class="spinner-border text-primary" role="status" style="font-size: 2rem;"><span class="sr-only"></span></div>';
-    document.body.appendChild(loader);
+    // Muestra loader utilizando Bootstrap
+    // const loader = document.createElement('div');
+    // loader.className = 'overlay-form';
+    // loader.innerHTML = '<div class="spinner-border text-primary" role="status" style="font-size: 2rem;"><span class="sr-only"></span></div>';
+    // document.body.appendChild(loader);
+
+    // Muestra el boton de carga
+    const submitButton = form.querySelector('button[type="submit"]');
+    const loadingButton = document.createElement('button');
+    loadingButton.classList.add('btn', 'btn-primary', 'rounded-0', 'd-block', 'w-100');
+    loadingButton.innerHTML = `
+        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+        <span role="status">Loading...</span>
+    `;
+
+    submitButton.replaceWith(loadingButton);
 
     try {
         const formData = new FormData(form);
@@ -36,6 +47,7 @@ async function handleSubmit(event) {
                 loader.remove();
                 // Recarga la página
                 // location.reload();
+                loadingButton.replaceWith(submitButton);
 
             }, 3000);
 
