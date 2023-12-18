@@ -47,6 +47,9 @@ body{
     }
 }
 
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
 
 /* Seccion home */
 
@@ -103,12 +106,12 @@ body{
 
 .skill{
     width: 170px;
-    transition: background-color 0.7s ease, color 0.7s ease;
+    transition: background-color 0.7s ease;
 }
 
 .skill:hover{
     background-color: #FF414D !important;
-    color: #fff;
+    color: #fff !important;
     cursor: pointer;
 }
 
@@ -173,7 +176,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    z-index: 2;
 }
 
 /* Sobreescribiendo colores de botones de bootstrap */
