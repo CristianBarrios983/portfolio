@@ -2,58 +2,65 @@
     "Proyectos": [
         {
             "nombre-proyecto" : "Pagina de perfumes",
-            "descripcion" : "",
+            "descripcion" : "Esta pagina fue replicada de una pagina ya existente",
             "url-ver" : "https://cristianbarrios983.github.io/landing-perfume-shop/#",
             "url-codigo" : "https://github.com/CristianBarrios983/landing-perfume-shop.git",
-            "imagen" : "assets/images/proyecto-landing-perfume-shop.png"
+            "imagen" : "assets/images/proyecto-landing-perfume-shop.png",
+            "lenguajes" : ["html","css","bootstrap"]
         },
 
         {
             "nombre-proyecto" : "Studio Bad Dog",
-            "descripcion" : "",
+            "descripcion" : "Sitio de una consultora de paginas web que fue desarrollado en un curso de Bootstrap en Youtube",
             "url-ver" : "https://cristianbarrios983.github.io/sitio-baddog/",
             "url-codigo" : "https://github.com/CristianBarrios983/sitio-baddog.git",
-            "imagen" : "assets/images/proyecto-sitio-baddog.png"
+            "imagen" : "assets/images/proyecto-sitio-baddog.png",
+            "lenguajes" : ["html","css","bootstrap"]
         },
 
         {
             "nombre-proyecto" : "Cake Shop",
-            "descripcion" : "",
+            "descripcion" : "Pagina web replicada de una imagen de Pinterest",
             "url-ver" : "https://cristianbarrios983.github.io/The-Cake-Shop/",
             "url-codigo" : "https://github.com/CristianBarrios983/The-Cake-Shop.git",
-            "imagen" : "assets/images/proyecto-cake-shop.png"
+            "imagen" : "assets/images/proyecto-cake-shop.png",
+            "lenguajes" : ["html","css"]
         },
 
         {
             "nombre-proyecto" : "Centro medico app",
-            "descripcion" : "",
+            "descripcion" : "Aplicacion web de consultorio medico. Contiene funciones basicas para gestionar un pequeño centro medico como pacientes, medicos y consultas",
             "url-ver" : "",
             "url-codigo" : "https://github.com/CristianBarrios983/centro-medico-app.git",
-            "imagen" : "assets/images/proyecto-centro-medico-app.png"
+            "imagen" : "assets/images/proyecto-centro-medico-app.png",
+            "lenguajes" : ["html","bootstrap","php"]
         },
 
         {
             "nombre-proyecto" : "Login-Registro",
-            "descripcion" : "",
+            "descripcion" : "Este es un proyecto muy sencillo que sirve para loguearse y registrarse",
             "url-ver" : "",
             "url-codigo" : "https://github.com/CristianBarrios983/login-registro.git",
-            "imagen" : "assets/images/proyecto-login-registro.png"
+            "imagen" : "assets/images/proyecto-login-registro.png",
+            "lenguajes" : ["html","bootstrap","php"]
         },
 
         {
             "nombre-proyecto" : "Login-crud MVC",
-            "descripcion" : "",
+            "descripcion" : "App de login y registro intermedio realizado mediante la arquitetura MVC",
             "url-ver" : "",
             "url-codigo" : "https://github.com/CristianBarrios983/login-crud-mvc.git",
-            "imagen" : "assets/images/proyecto-login-crud-mvc.png"
+            "imagen" : "assets/images/proyecto-login-crud-mvc.png",
+            "lenguajes" : ["html","bootstrap","php"]
         },
 
         {
             "nombre-proyecto" : "Mini Ecommerce",
-            "descripcion" : "",
+            "descripcion" : "App de productos basico en donde se pueden realizar pedidos y cuenta con un panel admin para administrar la app",
             "url-ver" : "",
             "url-codigo" : "https://github.com/CristianBarrios983/pagina-productos.git",
-            "imagen" : "assets/images/proyecto-mini-ecommerce.png"
+            "imagen" : "assets/images/proyecto-mini-ecommerce.png",
+            "lenguajes" : ["html","css","bootstrap","php"]
         }
     ]
 }

@@ -32,7 +32,7 @@
     <button id="scrollToTop" onclick="" class="border-0 rounded-circle bg-danger text-white p-3 position-fixed bottom-0 end-0 me-3 d-flex justify-content-center align-items-center d-none"><i class="fa-solid fa-arrow-up"></i></button>
     
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="nav">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark transparent" id="nav">
             <div class="container">
               <a class="navbar-brand">Mi portafolio</a>
               <button id="navbarToggler" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -242,6 +242,26 @@
         <div class="row justify-content-center" id="proyectos">
 
             <!-- Cards de proyectos -->
+
+            <!-- Modal info -->
+            <!-- Modal -->
+            <div class="modal" id="modal" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="projectTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="cerrarModal()"></button>
+                  </div>
+                  <div class="modal-body" id="modalBody">
+                    <p id="projectDescription"></p>
+                    <div id="badges"></div>
+                  </div>
+                  <div class="modal-footer">
+                    <a id="url-code" type="button" class="btn btn-primary rounded-0 fs-5" target="_blank">Codigo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
         </div>
 
