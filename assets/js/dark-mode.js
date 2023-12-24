@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
     darkModeToggle.addEventListener('change', function () {
       if (darkModeToggle.checked) {
         body.setAttribute('data-bs-theme', 'dark');
-        icon.classList.remove('bi-moon-stars-fill');
-        icon.classList.add('bi-sun-fill'); // Cambia la clase del icono al modo oscuro
+        icon.classList.remove('fa-solid','fa-moon');
+        icon.classList.add('fa-solid','fa-sun'); // Cambia la clase del icono al modo oscuro
       } else {
         body.setAttribute('data-bs-theme', 'light');
-        icon.classList.remove('bi-sun-fill');
-        icon.classList.add('bi-moon-stars-fill'); // Cambia la clase del icono al modo claro
+        icon.classList.remove('fa-solid','fa-sun');
+        icon.classList.add('fa-solid','fa-moon'); // Cambia la clase del icono al modo claro
       }
     });
   });

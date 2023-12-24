@@ -27,6 +27,9 @@
       </div>
       <div class="loading-text mt-1 fs-5">Cargando...</div>
     </div>
+
+    <!-- Boton de scroll hacia arriba -->
+    <button id="scrollToTop" onclick="" class="border-0 rounded-circle bg-danger text-white p-3 position-fixed bottom-0 end-0 me-3 d-flex justify-content-center align-items-center d-none"><i class="fa-solid fa-arrow-up"></i></button>
     
     <header>
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="nav">
@@ -58,7 +61,7 @@
                   <li class="nav-item">
                     <div class="form-check form-switch d-flex justify-content-center align-items-center">
                       <input class="form-check-input me-1 text-white" type="checkbox" role="switch" id="darkModeToggle">
-                      <label class="form-check-label nav-link disabled" for="flexSwitchCheckDefault"><i class="bi bi-moon-stars-fill" id="icon"></i></label>
+                      <label class="form-check-label nav-link disabled align-items-center" for="flexSwitchCheckDefault"><i class="fa-solid fa-moon" id="icon"></i></label>
                     </div>
                   </li>
                 </ul>
@@ -100,9 +103,9 @@
             <div class="foto-container" data-aos="fade-up">
               <img src="assets/images/astronauta.jpg" alt="" class="img-fluid">
               <div class="overlay-socials">
-                <a href="https://github.com/CristianBarrios983" class="nav-link" target="_blank"><i class="fa-brands fa-github fs-1"></i></a>
-                <a href="https://www.linkedin.com/in/cristianbarrios983/" class="nav-link" target="_blank"><i class="fa-brands fa-linkedin fs-1"></i></a>
-                <a href="#" class="nav-link" target="_blank"><i class="fa-brands fa-whatsapp fs-1"></i></a>
+                <a href="https://github.com/CristianBarrios983" class="nav-link social-link" target="_blank"><i class="fa-brands fa-github fs-1"></i></a>
+                <a href="https://www.linkedin.com/in/cristianbarrios983/" class="nav-link social-link" target="_blank"><i class="fa-brands fa-linkedin fs-1"></i></a>
+                <a href="#" class="nav-link social-link" target="_blank"><i class="fa-brands fa-whatsapp fs-1"></i></a>
               </div>
             </div>
           </div>
@@ -288,7 +291,7 @@
                   </div>
                 </div>
                 <div class="mb-3" data-aos="fade-up">
-                  <button type="submit" class="btn btn-primary fs-5 rounded-0 d-block w-100">Enviar mensaje</button>
+                  <button type="submit" class="btn btn-primary fs-5 rounded-0 d-block w-100">Enviar mensaje <i class="fa-regular fa-paper-plane"></i></button>
                 </div>
               </form>
             </div>
@@ -303,13 +306,13 @@
               <div class="col-md-12" data-aos="fade-up">
                 <div class="socials-content d-flex justify-content-center align-items-center gap-3 text-dark">
                   <div class="social-item">
-                    <a href="https://github.com/CristianBarrios983" class="nav-link" target="_blank"><i class="fa-brands fa-github fs-1 me-1"></i></a>
+                    <a href="https://github.com/CristianBarrios983" class="nav-link social-link" target="_blank"><i class="fa-brands fa-github fs-1 me-1"></i></a>
                   </div>
                   <div class="social-item">
-                    <a href="https://www.linkedin.com/in/cristianbarrios983/" class="nav-link" target="_blank"><i class="fa-brands fa-linkedin fs-1 me-1"></i></a>
+                    <a href="https://www.linkedin.com/in/cristianbarrios983/" class="nav-link social-link" target="_blank"><i class="fa-brands fa-linkedin fs-1 me-1"></i></a>
                   </div>
                   <div class="social-item">
-                    <a href="#" class="nav-link" target="_blank"><i class="fa-brands fa-whatsapp fs-1 me-1"></i></a>
+                    <a href="#" class="nav-link social-link" target="_blank"><i class="fa-brands fa-whatsapp fs-1 me-1"></i></a>
                   </div>
                 </div>
               </div>
@@ -362,5 +365,7 @@
       <script src="assets/js/form.js"></script>
       <!-- SweetAlert2 libreria -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Boton Scroll To Top -->
+    <script src="assets/js/scroll-to-top.js"></script>
 </body>
 </html>

@@ -26,6 +26,34 @@ body{
     font-family: 'Poppins', 'Monserrat', sans-serif;
 }
 
+/* Boton de ir hacia arriba */
+#scrollToTop{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 90px;
+    z-index: 1;
+    animation: popup .7s ease-out;
+}
+
+#scrollToTop:hover{
+    background-color: var(--coral-red) !important;
+}
+
+@keyframes popup {
+    0%{
+        width: 40px;
+        height: 40px;
+    }
+    50%{
+        width: 80px;
+        height: 80px;
+    }
+    100%{
+        width: 60px;
+        height: 60px;
+    }
+}
+
 /* Seccion Menu */
 
 #nav.fixed{
@@ -195,6 +223,14 @@ body{
 
 .nav-link:hover{
     color: var(--eastern-blue);
+}
+
+.social-link{
+    transition: transform 0.7s ease-out;
+}
+
+.social-link:hover{
+    transform: scale(1.2);
 }
 
 /* Responsive */
