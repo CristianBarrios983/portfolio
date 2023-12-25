@@ -36,7 +36,6 @@ cargarProyectos();
 
 
 const cargarModal = (nombreProyecto, descripcionProyecto, urlCodigo, lenguajes) => {
-    const modal = document.getElementById('modal');
     const modalTitle = document.getElementById('projectTitle');
     const description = document.getElementById('projectDescription');
     const urlCode = document.getElementById('url-code');
@@ -62,7 +61,7 @@ const cargarModal = (nombreProyecto, descripcionProyecto, urlCodigo, lenguajes) 
     
         lenguajes.forEach((lenguaje) => {
             const span = document.createElement('span');
-            span.className = 'badge text-bg-primary me-1';
+            span.className = 'badge text-bg-primary me-1 rounded-0';
             span.textContent = lenguaje;
             badgeModal.appendChild(span);
         });
@@ -72,12 +71,16 @@ const cargarModal = (nombreProyecto, descripcionProyecto, urlCodigo, lenguajes) 
         urlCode.href = urlCodigo;
     }
 
-    modal.style.display = 'block';
+    // Para abrir el modal
+    document.getElementById('modal').classList.add('d-flex');
+    const modalActive = new bootstrap.Modal(document.getElementById('modal'));
+    modalActive.show();
 
 }
 
 const cerrarModal = () => {
-    const modal = document.getElementById('modal');
-    
-    modal.style.display = 'none';
+    // Para ocultar el modal
+    document.getElementById('modal').classList.remove('d-flex');
+    const modalActive = new bootstrap.Modal(document.getElementById('modal'));
+    modalActive.hide();
 }
