@@ -80,7 +80,11 @@ const cargarModal = (nombreProyecto, descripcionProyecto, urlCodigo, lenguajes) 
 
 const cerrarModal = () => {
     // Para ocultar el modal
-    document.getElementById('modal').classList.remove('d-flex');
     const modalActive = new bootstrap.Modal(document.getElementById('modal'));
     modalActive.hide();
+
+    // Para que al quitar la clase flexbox no sea tan repentino
+    setTimeout( () => {
+        document.getElementById('modal').classList.remove('d-flex');
+    }, 1000)
 }

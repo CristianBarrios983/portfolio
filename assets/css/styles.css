@@ -193,6 +193,10 @@ body{
     filter: blur(3px);
 }
 
+.fade{
+    transition: opacity 0.25s ease-in-out !important;
+}
+
 /* Seccion Contacto */
 .overlay-form{
     position: fixed;
