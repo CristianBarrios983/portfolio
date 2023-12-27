@@ -29,7 +29,7 @@
     </div>
 
     <!-- Boton de scroll hacia arriba -->
-    <button id="scrollToTop" onclick="" class="border-0 rounded-circle bg-danger text-white p-3 position-fixed bottom-0 end-0 me-3 d-flex justify-content-center align-items-center d-none"><i class="fa-solid fa-arrow-up"></i></button>
+    <button id="scrollToTop" onclick="" class="border-0 rounded-circle text-white p-3 position-fixed bottom-0 end-0 me-3 d-flex justify-content-center align-items-center d-none"><i class="fa-solid fa-arrow-up"></i></button>
     
     <header>
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="nav">
@@ -86,8 +86,8 @@
                       <p class="fs-3 fw-bolder text-white">Soy un <span class="text-warning">desarrollador web</span></p>
                     </div>
                     <div class="buttons d-flex justify-content-center flex-column flex-md-row gap-2">
-                      <a href="#projects" class="btn btn-danger fs-5 rounded-0">Mis proyectos</a>
-                      <a href="#contact" class="btn btn-primary fs-5 rounded-0">Contactame</a>
+                      <a href="#projects" class="btn btn-danger fs-5 rounded-0 p-3">Mis proyectos</a>
+                      <a href="#contact" class="btn btn-primary fs-5 rounded-0 p-3">Contactame</a>
                     </div>
                 </div>
             </div>
@@ -370,11 +370,12 @@
       <script src="assets/js/bootstrap-validation.js"></script>
       <!-- Script animar scroll -->
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <!-- Metodo para arrancar las animaciones -->
+      <!-- Metodo para arrancar las animaciones scroll -->
       <script>
         AOS.init({
           //para la duracion de la animacion
-          duration: 1300
+          duration: 1300,
+          once: "" //Para que la animacion no se repita
         });
       </script>
       <!-- Font-Awesome -->

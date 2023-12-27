@@ -43,6 +43,7 @@ const cargarModal = (nombreProyecto, descripcionProyecto, urlCodigo, lenguajes) 
 
 
     badgeModal.innerHTML = '';
+    urlCode.style.display = "block";
 
     if(nombreProyecto){
 
@@ -69,6 +70,8 @@ const cargarModal = (nombreProyecto, descripcionProyecto, urlCodigo, lenguajes) 
 
     if(urlCodigo){
         urlCode.href = urlCodigo;
+    }else{
+        urlCode.style.display = "none";
     }
 
     // Para abrir el modal
