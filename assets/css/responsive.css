@@ -1,0 +1,12 @@
+/* Responsive */
+
+@media (max-width: 400px){
+    .foto-container{
+        width: 300px;
+        height: 300px;
+    }
+
+    .skill{
+        width: 130px;
+    }
+}
