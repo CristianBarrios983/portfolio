@@ -81,6 +81,11 @@
     transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
+.buttons-project > .btn{
+    width: 165px;
+    height: 50px;
+}
+
 /* Badge de bootstrap */
 
 .text-bg-primary{
@@ -90,8 +95,8 @@
 /* Textos bootstrap */
 
 .text-warning{
-    color: var(--banana-yellow) !important;
-    text-shadow: 0 0 15px var(--banana-yellow) !important;
+    color: var(--casper) !important;
+    text-shadow: 0 0 15px var(--casper) !important;
 }
 
 /* Enlaces de bootstrap */

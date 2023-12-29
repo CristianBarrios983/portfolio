@@ -16,8 +16,8 @@ const cargarProyectos = () => {
                         <div class="card-body">
                             <h5 class="card-title">${proyecto["nombre-proyecto"]}</h5>
                             <div class="overlay">
-                                <div class="buttons d-flex gap-2">
-                                    ${proyecto['url-ver'] ? `<a href="${proyecto['url-ver']}" class="btn btn-danger rounded-0 fs-5" target="_blank">Ver proyecto</a>` : ''}
+                                <div class="buttons-project d-flex flex-column gap-2">
+                                    ${proyecto['url-ver'] ? `<a href="${proyecto['url-ver']}" class="btn btn-danger rounded-0 fs-5 d-flex align-items-center justify-content-center" target="_blank">Ver proyecto</a>` : ''}
                                     <button class="btn btn-info rounded-0 fs-5" onclick="cargarModal('${proyecto["nombre-proyecto"]}', '${proyecto["descripcion"]}', '${proyecto["url-codigo"]}', '${proyecto["lenguajes"]}')" >Info</button>
                                 </div>
                             </div>

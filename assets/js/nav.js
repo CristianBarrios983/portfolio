@@ -20,4 +20,20 @@ navbarToggler.addEventListener("click", () => {
         icon.classList.remove('fa-sharp', 'fa-solid', 'fa-bars');
         icon.classList.add('fa-sharp', 'fa-solid', 'fa-x');
     }
+});
+
+// Para que al dar click a un enlace del menu, el menu no se quede desplegado
+document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll('li a');
+
+    links.forEach((link) => {
+        link.addEventListener("click", () => {
+            const toggler = document.querySelector(".navbar-toggler");
+
+            // Evaluando si el boton existe y si esta desplegado
+            if(toggler && toggler.getAttribute("aria-expanded") === "true"){
+                toggler.click();
+            }
+        })
+    })
 })
