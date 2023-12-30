@@ -178,13 +178,14 @@ body{
 /* Seccion de servicios */
 
 .service-item{
-    transition: background-color 0.7s ease-in-out, transform 0.7s ease-in-out;
+    transition: background-color 0.7s ease-in-out, transform 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
 }
 
 .service-item:hover{
     background-color: var(--color2) !important;
     color: #fff !important;
     transform: scale(1.05);
+    box-shadow: 0 0 15px var(--color2) !important;
     cursor: pointer;
 }
 
@@ -252,4 +253,8 @@ body{
 
 .social-link:hover{
     transform: scale(1.2);
+}
+
+.social-link > i{
+    font-size: 38px;
 }
