@@ -62,7 +62,7 @@ const cargarModal = (nombreProyecto, descripcionProyecto, urlCodigo, lenguajes) 
     
         lenguajes.forEach((lenguaje) => {
             const span = document.createElement('span');
-            span.className = 'badge text-bg-primary me-1 rounded-0';
+            span.className = 'badge text-bg-primary me-1 rounded-0 fs-6';
             span.textContent = lenguaje;
             badgeModal.appendChild(span);
         });

@@ -231,6 +231,10 @@ body{
     transition: opacity 0.25s ease-in-out !important;
 }
 
+.modal-close{
+    border: none !important;
+}
+
 /* Seccion Contacto */
 .overlay-form{
     position: fixed;
