@@ -23,7 +23,7 @@ async function handleSubmit(event) {
     loadingButton.classList.add('btn', 'btn-primary', 'rounded-0', 'd-block', 'w-100');
     loadingButton.innerHTML = `
         <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
-        <span role="status">Enviando...</span>
+        <span role="status" class="fw-bold fs-5">Enviando...</span>
     `;
 
     submitButton.replaceWith(loadingButton);
